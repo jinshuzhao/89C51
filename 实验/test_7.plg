@@ -1,0 +1,580 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\单片机\实验\test_7.uvproj
+Project File Date:  05/08/2016
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+Program Size: data=9.0 xdata=0 code=23
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+Program Size: data=9.0 xdata=0 code=23
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+Program Size: data=9.0 xdata=0 code=23
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(11): warning C206: 'delay': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY1S?TEST_7
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  DELAY
+    MODULE:  test_7.obj (TEST_7)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DELAY
+    MODULE:  test_7.obj (TEST_7)
+    ADDRESS: 000AH
+Program Size: data=10.0 xdata=0 code=61
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(11): warning C206: 'delay1s': missing function-prototype
+TEST_7.C(19): error C231: 'delay1s': redefinition
+TEST_7.C(25): error C231: 'delay1s': redefinition
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(11): warning C206: 'delay1s': missing function-prototype
+TEST_7.C(17): error C141: syntax error near 'void'
+TEST_7.C(19): error C202: 'j': undefined identifier
+TEST_7.C(20): error C202: 'h': undefined identifier
+TEST_7.C(22): error C202: 'j': undefined identifier
+TEST_7.C(23): error C202: 'k': undefined identifier
+TEST_7.C(25): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(11): warning C206: 'delay1s': missing function-prototype
+TEST_7.C(19): error C231: 'delay1s': redefinition
+TEST_7.C(25): error C231: 'delay1s': redefinition
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(11): error C141: syntax error near 'void'
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(11): warning C206: 'delay1s': missing function-prototype
+TEST_7.C(19): error C231: 'delay1s': redefinition
+TEST_7.C(25): error C231: 'delay1s': redefinition
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(11): warning C206: 'delay1s': missing function-prototype
+TEST_7.C(19): error C231: 'delay1s': redefinition
+TEST_7.C(25): error C231: 'delay1s': redefinition
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(11): warning C206: 'delay1s': missing function-prototype
+TEST_7.C(19): error C231: 'delay1s': redefinition
+TEST_7.C(25): error C231: 'delay1s': redefinition
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(11): warning C206: 'delay1s': missing function-prototype
+TEST_7.C(19): error C231: 'delay1s': redefinition
+TEST_7.C(25): error C231: 'delay1s': redefinition
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY1S?TEST_7
+Program Size: data=9.0 xdata=0 code=52
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY1S?TEST_7
+Program Size: data=9.0 xdata=0 code=52
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY1S?TEST_7
+Program Size: data=9.0 xdata=0 code=52
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(12): warning C206: 'delay1s': missing function-prototype
+TEST_7.C(20): error C231: 'delay1s': redefinition
+TEST_7.C(26): error C231: 'delay1s': redefinition
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(12): warning C206: 'delay1s': missing function-prototype
+TEST_7.C(20): error C231: 'delay1s': redefinition
+TEST_7.C(26): error C231: 'delay1s': redefinition
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(11): warning C206: 'delay1s': missing function-prototype
+TEST_7.C(19): error C231: 'delay1s': redefinition
+TEST_7.C(25): error C231: 'delay1s': redefinition
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+Program Size: data=9.0 xdata=0 code=55
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+Program Size: data=9.0 xdata=0 code=55
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(7): warning C206: 'delay1s': missing function-prototype
+TEST_7.C(19): error C231: 'delay1s': redefinition
+TEST_7.C(25): error C231: 'delay1s': redefinition
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+TEST_7.C(7): error C141: syntax error near 'void'
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+Program Size: data=10.0 xdata=0 code=61
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+Program Size: data=10.0 xdata=0 code=61
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+Program Size: data=10.0 xdata=0 code=61
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+Program Size: data=10.0 xdata=0 code=61
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+Program Size: data=10.0 xdata=0 code=61
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+linking...
+Program Size: data=10.0 xdata=0 code=61
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+compiling test_8.c...
+TEST_8.C(8): error C202: 'True': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+compiling test_8.c...
+TEST_8.C(8): error C202: 'true': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+compiling test_8.c...
+TEST_8.C(11): warning C206: 'delays': missing function-prototype
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_8.obj (TEST_8)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_8.obj (TEST_8)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_8
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY1S?TEST_8
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  DELAYS
+    MODULE:  test_8.obj (TEST_8)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DELAYS
+    MODULE:  test_8.obj (TEST_8)
+    ADDRESS: 000AH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DELAYS
+    MODULE:  test_8.obj (TEST_8)
+    ADDRESS: 0025H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DELAYS
+    MODULE:  test_8.obj (TEST_8)
+    ADDRESS: 0047H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DELAYS
+    MODULE:  test_8.obj (TEST_8)
+    ADDRESS: 004DH
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+compiling test_8.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_8.obj (TEST_8)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_8.obj (TEST_8)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_8
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+compiling test_8.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_8.obj (TEST_8)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_8.obj (TEST_8)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_8
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_8.obj (TEST_8)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_8.obj (TEST_8)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_8
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+compiling test_8.c...
+TEST_8.C(10): warning C206: 'delay1s': missing function-prototype
+TEST_8.C(34): error C231: 'delay1s': redefinition
+TEST_8.C(40): error C231: 'delay1s': redefinition
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+compiling test_8.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_8.obj (TEST_8)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_8.obj (TEST_8)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_8
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+compiling test_8.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_8.obj (TEST_8)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_8.obj (TEST_8)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_8
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+compiling test_8.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_8.obj (TEST_8)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_8.obj (TEST_8)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_8
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+compiling test_8.c...
+compiling test_7.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_7.obj (TEST_7)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_7.obj (TEST_7)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_7
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+compiling test_8.c...
+linking...
+Program Size: data=10.0 xdata=0 code=112
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_7.c...
+compiling test_8.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_8.obj (TEST_8)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_8.obj (TEST_8)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_8
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+compiling test_7.c...
+compiling test_8.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_8.obj (TEST_8)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_8.obj (TEST_8)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_8
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+compiling test_8.c...
+linking...
+Program Size: data=10.0 xdata=0 code=112
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_8.c...
+linking...
+Program Size: data=10.0 xdata=0 code=112
+creating hex file from "test_7"...
+"test_7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_8.c...
+linking...
+Program Size: data=10.0 xdata=0 code=112
+creating hex file from "test_8"...
+"test_8" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_8.c...
+compiling test_7.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_7.obj (TEST_7)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_7.obj (TEST_7)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_7
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+compiling test_8.c...
+compiling test_7.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_7.obj (TEST_7)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_7.obj (TEST_7)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_7
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+compiling test_8.c...
+compiling test_7.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_7.obj (TEST_7)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_7
+Program Size: data=11.0 xdata=0 code=141
+Target not created
+Build target 'Target 1'
+compiling test_8.c...
+TEST_8.C(10): warning C206: 'delay1s': missing function-prototype
+compiling test_7.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_7.obj (TEST_7)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_7
+Program Size: data=11.0 xdata=0 code=141
+Target not created
+Build target 'Target 1'
+compiling test_8.c...
+compiling test_7.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY1S
+    MODULE:  test_7.obj (TEST_7)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  test_7.obj (TEST_7)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?TEST_7
+Program Size: data=11.0 xdata=0 code=158
+Target not created
+Build target 'Target 1'
+compiling test_8.c...
+linking...
+Program Size: data=10.0 xdata=0 code=112
+creating hex file from "test_8"...
+"test_8" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_9.c...
+linking...
+Program Size: data=9.0 xdata=0 code=16
+creating hex file from "test_9"...
+"test_9" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_9.c...
+TEST_9.C(4): error C244: 'LED': can't initialize, bad type or class
+TEST_9.C(4): error C132: 'LED': not in formal parameter list
+TEST_9.C(7): error C132: 'main': not in formal parameter list
+TEST_9.C(7): error C141: syntax error near '{'
+TEST_9.C(8): error C136: 'CYCLE': 'void' on variable
+TEST_9.C(8): error C244: 'CYCLE': can't initialize, bad type or class
+TEST_9.C(8): error C136: 'CYCLE': 'void' on variable
+TEST_9.C(8): error C132: 'CYCLE': not in formal parameter list
+TEST_9.C(8): error C136: 'PWM_LOW': 'void' on variable
+TEST_9.C(8): error C244: 'PWM_LOW': can't initialize, bad type or class
+TEST_9.C(8): error C136: 'PWM_LOW': 'void' on variable
+TEST_9.C(8): error C132: 'PWM_LOW': not in formal parameter list
+TEST_9.C(10): error C141: syntax error near 'while'
+TEST_9.C(10): error C141: syntax error near '1'
+TEST_9.C(12): error C141: syntax error near '60000'
+TEST_9.C(13): error C141: syntax error near 'for'
+TEST_9.C(13): error C141: syntax error near '=', expected ')'
+TEST_9.C(13): error C129: missing ';' before '<'
+Target not created
+Build target 'Target 1'
+compiling test_9.c...
+TEST_9.C(4): error C141: syntax error near 'sbit'
+Target not created
+Build target 'Target 1'
+compiling test_9.c...
+linking...
+Program Size: data=13.0 xdata=0 code=144
+creating hex file from "test_9"...
+"test_9" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_9.c...
+linking...
+Program Size: data=13.0 xdata=0 code=144
+creating hex file from "test_9"...
+"test_9" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_9.c...
+linking...
+Program Size: data=13.0 xdata=0 code=144
+creating hex file from "test_9"...
+"test_9" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_9.c...
+linking...
+Program Size: data=13.0 xdata=0 code=144
+creating hex file from "test_9"...
+"test_9" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_9.c...
+linking...
+Program Size: data=13.0 xdata=0 code=144
+creating hex file from "test_9"...
+"test_9" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_9.c...
+linking...
+Program Size: data=13.0 xdata=0 code=144
+creating hex file from "test_9"...
+"test_9" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_9.c...
+TEST_9.C(4): error C247: non-address/-constant initializer
+Target not created
+Build target 'Target 1'
+compiling test_9.c...
+TEST_9.C(4): error C247: non-address/-constant initializer
+Target not created
+Build target 'Target 1'
+compiling test_9.c...
+linking...
+Program Size: data=13.0 xdata=0 code=149
+creating hex file from "test_9"...
+"test_9" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_9.c...
+linking...
+Program Size: data=13.0 xdata=0 code=149
+creating hex file from "test_9"...
+"test_9" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_9.c...
+linking...
+Program Size: data=13.0 xdata=0 code=149
+creating hex file from "test_9"...
+"test_9" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test_10.c...
+TEST_10.C(12): warning C275: expression with possibly no effect
+TEST_10.C(12): error C141: syntax error near '='
+TEST_10.C(16): error C141: syntax error near '='
+Target not created
+Build target 'Target 1'
+compiling test_10.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?TEST_10
+Program Size: data=9.0 xdata=0 code=41
+creating hex file from "test_10"...
+"test_10" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test_10.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?TEST_10
+Program Size: data=9.0 xdata=0 code=41
+creating hex file from "test_10"...
+"test_10" - 0 Error(s), 1 Warning(s).

@@ -1,0 +1,116 @@
+C51 COMPILER V9.00   TEST_1                                                                12/09/2012 10:31:52 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE TEST_1
+OBJECT MODULE PLACED IN test_1.OBJ
+COMPILER INVOKED BY: D:\keil 4\C51\BIN\C51.EXE test_1.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1           #include<reg51.h>
+   2          #define uchar unsigned char
+   3          uchar number[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90,0xbf};
+   4           uchar s=0,f=0,h=0;
+   5           sbit P1_0=P1^0;
+   6           sbit P1_6=P1^6;
+   7           sbit P1_7=P1^7;
+   8           sbit P1_1=P1^1;
+   9           void main()
+  10          {
+  11   1      TMOD=0x01;
+  12   1      TH0=(65536-1000)/256;
+  13   1      TL0=(65536-1000)%256;
+  14   1      ET0=1;
+  15   1      EA=1;
+  16   1      TR0=1;
+  17   1      while(1);
+  18   1      }
+  19          
+  20          
+  21          void tiner0_int(void) interrupt 1
+  22          { uchar j,m;
+  23   1      unsigned int k;
+  24   1      TH0=(65536-1000)/256;
+  25   1      TL0=(65536-1000)%256;
+  26   1       k++;m++;
+  27   1      switch(j)
+  28   1      {
+  29   2      case 0:P2=0x01;P0=number[h/10];break;
+  30   2      case 1:P2=0x02;P0=number[h%10];break;
+  31   2      case 2:P2=0x04;P0=number[10];break;
+  32   2      case 3:P2=0x08;P0=number[f/10];break;
+  33   2      case 4:P2=0x10;P0=number[f%10];break;
+  34   2      case 5:P2=0x20;P0=number[10];break;
+  35   2      case 6:P2=0x40;P0=number[s/10];break;
+  36   2      case 7:P2=0x80;P0=number[s%10];break;
+  37   2      }
+  38   1       j++;
+  39   1      if(j==8)
+  40   1       j=0;
+  41   1      if(k==1000)
+  42   1       {  k=0;
+  43   2         if(P1_0==0)
+  44   2        { if(s==0)
+  45   3          { s=59;
+  46   4                if(f==0)
+  47   4                  {f=59;
+  48   5                       if(h==0)
+  49   5                        h=23;
+  50   5                      else 
+  51   5                       h--;
+  52   5                      }
+  53   4                else 
+  54   4                 f--;
+  55   4              }
+C51 COMPILER V9.00   TEST_1                                                                12/09/2012 10:31:52 PAGE 2   
+
+  56   3              else
+  57   3          s--;
+  58   3        }                               
+  59   2       else if(P1_0==1)
+  60   2        { s++;
+  61   3          if(s==60)
+  62   3          { s=0;
+  63   4                f++;
+  64   4                if(f==60)
+  65   4                  {f=0;
+  66   5                       h++;
+  67   5                       if(h==24)
+  68   5                         h=0;
+  69   5                      }
+  70   4          }
+  71   3        }
+  72   2       }
+  73   1       if(m==100)
+  74   1         { m=0;
+  75   2          if(P1_6==0)
+  76   2                { f++;
+  77   3                if(f==60)
+  78   3                  f=0;
+  79   3                }
+  80   2          if(P1_7==0)
+  81   2                {h++;
+  82   3                 if(h==24)
+  83   3                  h=0;
+  84   3                }
+  85   2              if(P1_1==0)
+  86   2               { h=0;
+  87   3                 f=0;
+  88   3                 s=0;
+  89   3               }
+  90   2         }
+  91   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    313    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     14       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

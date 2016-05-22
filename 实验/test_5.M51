@@ -1,0 +1,106 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        05/11/2016  19:56:58  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+E:\KEIL\C51\BIN\BL51.EXE test_5.obj TO test_5 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  test_5.obj (TEST_5)
+  E:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  test_5 (TEST_5)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     002AH     UNIT         ?PR?DISPLAY?TEST_5
+            CODE    002DH     000DH     UNIT         ?PR?DELAY?TEST_5
+            CODE    003AH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0046H     0005H     UNIT         ?PR?MAIN?TEST_5
+
+
+
+OVERLAY MAP OF MODULE:   test_5 (TEST_5)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?TEST_5
+
+?PR?MAIN?TEST_5
+  +--> ?PR?DISPLAY?TEST_5
+
+?PR?DISPLAY?TEST_5
+  +--> ?PR?DELAY?TEST_5
+
+
+
+SYMBOL TABLE OF MODULE:  test_5 (TEST_5)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TEST_5
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  C:002DH         PUBLIC        delay
+  C:0046H         PUBLIC        main
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/11/2016  19:56:58  PAGE 2
+
+
+  C:0003H         PUBLIC        display
+  -------         PROC          DELAY
+  -------         DO            
+  D:0007H         SYMBOL        m
+  D:0005H         SYMBOL        n
+  D:0006H         SYMBOL        k
+  -------         ENDDO         
+  C:002DH         LINE#         3
+  C:002DH         LINE#         4
+  C:002DH         LINE#         5
+  C:002FH         LINE#         6
+  C:0031H         LINE#         7
+  C:0039H         LINE#         8
+  -------         ENDPROC       DELAY
+  -------         PROC          DISPLAY
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:0003H         LINE#         9
+  C:0003H         LINE#         10
+  C:0003H         LINE#         11
+  C:000BH         LINE#         12
+  C:000FH         LINE#         13
+  C:0012H         LINE#         14
+  C:0018H         LINE#         15
+  C:0020H         LINE#         16
+  C:0024H         LINE#         17
+  C:0027H         LINE#         18
+  C:002CH         LINE#         19
+  -------         ENDPROC       DISPLAY
+  -------         PROC          MAIN
+  C:0046H         LINE#         20
+  C:0046H         LINE#         21
+  C:0046H         LINE#         22
+  C:0046H         LINE#         23
+  C:0049H         LINE#         24
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        TEST_5
+
+Program Size: data=9.0 xdata=0 code=75
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

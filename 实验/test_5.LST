@@ -1,0 +1,48 @@
+C51 COMPILER V9.00   TEST_5                                                                05/11/2016 19:56:57 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE TEST_5
+OBJECT MODULE PLACED IN test_5.OBJ
+COMPILER INVOKED BY: E:\keil\C51\BIN\C51.EXE test_5.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #define uchar unsigned char
+   3          void delay()
+   4          { uchar m,n,k;
+   5   1       for(m=20;m>0;m--)
+   6   1       for(k=40;k>0;k--)
+   7   1       for(n=248;n>0;n--);
+   8   1      }
+   9          void display()
+  10          {uchar i,j;
+  11   1        for(i=0x01;i<0x80;i<<=1) //两盏灯亮改i=0x03;i<0xc0
+  12   1               {P0=~i;
+  13   2                delay();
+  14   2               } 
+  15   1        for(j=0x80;j>0x01;j>>=1) //两盏灯亮改i=0xc0;i<0x03
+  16   1               {P0=~j;
+  17   2                delay();
+  18   2               }
+  19   1      }
+  20          void main()
+  21          {while(1)
+  22   1        {
+  23   2         display();
+  24   2        }
+  25   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     60    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

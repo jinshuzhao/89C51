@@ -1,0 +1,51 @@
+C51 COMPILER V9.00   TEST_10                                                               05/08/2016 21:10:23 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE TEST_10
+OBJECT MODULE PLACED IN test_10.OBJ
+COMPILER INVOKED BY: E:\keil\C51\BIN\C51.EXE test_10.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg52.h>
+   2          
+   3          #define DataPort P0
+   4          sbit CH1= P2^6; 
+   5          sbit CH2 = P2^7;
+   6           
+   7          void Delay(unsigned int t);
+   8          
+   9          
+  10          void main(void){
+  11   1              while(1){
+  12   2                      DataPort = 0x01;
+  13   2                      CH2 = 1;
+  14   2                      CH2 = 0;
+  15   2      
+  16   2                      DataPort = 0xb0;
+  17   2                      CH1 = 1;
+  18   2                      CH1 = 0;
+  19   2              }
+  20   1              
+  21   1      
+  22   1      
+  23   1      }
+  24          
+  25          void Delay(unsigned int t)
+  26          {
+  27   1       while(--t);
+  28   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     26    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,379 @@
+C51 COMPILER V9.00   TEST_3                                                                07/18/2011 19:03:32 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE TEST_3
+OBJECT MODULE PLACED IN test_3.OBJ
+COMPILER INVOKED BY: D:\keil 4\C51\BIN\C51.EXE test_3.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #define uchar unsigned char
+   3          #define uint unsigned int
+   4          uchar number1[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90,0xbf};
+   5          uchar number2[]={0x40,0x79,0x24,0x30,0x19,0x12,0x02,0x78,0x00,0x10};
+   6           uchar s=0,f=0,h=0,j,m,n,a,a1,b,b1,c,c1,d,d1,e,g,flg1,flg=0;
+   7           uint year=2011,month=1,day=1;
+   8           sbit P1_0=P1^0;
+   9           sbit P1_1=P1^1;
+  10           sbit P1_2=P1^2;
+  11           sbit P1_3=P1^3;
+  12           void delay(uchar x)
+  13           { uchar i,j;
+  14   1         for(i=0;i<=x;i++)
+  15   1         for(j=0;j<=248;j++);
+  16   1       }
+  17           void display()
+  18           {      if(flg==0)
+  19   1           {   switch(j)
+  20   2                 {
+  21   3                              case 0:if(flg1==5) 
+  22   3                                                 { a1++;
+  23   4                                                      if(a1<=50)P3=0x00;
+  24   4                                                      else P3=0x01;
+  25   4                                                      if(a1==100)
+  26   4                                                       a1=0;
+  27   4                                                      }
+  28   3                                                      else
+  29   3                                                      P3=0x01;
+  30   3                                                      P0=number1[h/10];break;
+  31   3                              case 1:if(flg1==5)
+  32   3                                                { b1++;
+  33   4                                                      if(b1<=50)P3=0x00;
+  34   4                                                      else P3=0x02;
+  35   4                                                      if(b1==100)
+  36   4                                                       b1=0;
+  37   4                                                 }
+  38   3                                                       else
+  39   3                                                       P3=0x02;
+  40   3                                                       P0=number1[h%10];break;
+  41   3                              case 2:P3=0x04;P0=number1[10];break;
+  42   3                              case 3: if(flg1==6)
+  43   3                                                { c1++;
+  44   4                                                      if(c1<=50)P3=0x00;
+  45   4                                                      else P3=0x08;
+  46   4                                                      if(c1==100)
+  47   4                                                       c1=0;
+  48   4                                                }
+  49   3                                                       else
+  50   3                                                       P3=0x08;
+  51   3                                                       P0=number1[f/10];break;
+  52   3      
+  53   3                              case 4: if(flg1==6)
+  54   3                                        { d1++;
+  55   4                                                      if(d1<=50)P3=0x00;
+C51 COMPILER V9.00   TEST_3                                                                07/18/2011 19:03:32 PAGE 2   
+
+  56   4                                                      else P3=0x10;
+  57   4                                                      if(d1==100)
+  58   4                                                       d1=0;
+  59   4                                                }
+  60   3                                                       else
+  61   3                                                       P3=0x10;
+  62   3                                                       P0=number1[f%10];break;
+  63   3                              case 5:P3=0x20;P0=number1[10];break;
+  64   3                              case 6:P3=0x40;P0=number1[s/10];break;
+  65   3                              case 7:P3=0x80;P0=number1[s%10];break;
+  66   3                         }
+  67   2               }
+  68   1              if(flg==1)
+  69   1                 { switch(j)
+  70   2                { case 8:if(flg1==4)
+  71   3                                        { c++;
+  72   4                                          if(c<=50)
+  73   4                                          P3=0x00;
+  74   4                                        else 
+  75   4                                          P3=0x01;
+  76   4                                        if(c==100)
+  77   4                                           c=0;
+  78   4                                        }
+  79   3                                       else
+  80   3                                         P3=0x01;
+  81   3                                         P0=number1[year/1000];break;
+  82   3       
+  83   3                         
+  84   3      
+  85   3                              case 9:if(flg1==4)
+  86   3                                              { d++;
+  87   4                                              if(d<=50)
+  88   4                                                P3=0x00;
+  89   4                                              else
+  90   4                                                P3=0x02;
+  91   4                                               if(d==100)
+  92   4                                                d=0;
+  93   4                                              }
+  94   3                                              else 
+  95   3                                                P3=0x02;
+  96   3                                                P0=number1[(year/100)%10];break;
+  97   3      
+  98   3                              case 10:if(flg1==4)
+  99   3                                              { e++;
+ 100   4                                               if(e<=50) 
+ 101   4                                                P3=0x00;
+ 102   4                                              else 
+ 103   4                                                P3=0x04;
+ 104   4                                              if(e==100)
+ 105   4                                                e=0;
+ 106   4                                          }
+ 107   3                                              else
+ 108   3                                               P3=0x04;
+ 109   3                                               P0=number1[(year/10)%10];
+ 110   3                                              break;
+ 111   3      
+ 112   3                              case 11:if(flg1==4)
+ 113   3                                              {  g++;
+ 114   4                                               if(g<=50)
+ 115   4                                                 P3=0x00;
+ 116   4                                               else 
+ 117   4                                                P3=0x08;
+C51 COMPILER V9.00   TEST_3                                                                07/18/2011 19:03:32 PAGE 3   
+
+ 118   4                                               if(g==100)
+ 119   4                                                 g=0;
+ 120   4                                              }
+ 121   3                                              else
+ 122   3                                                P3=0x08;
+ 123   3                                                P0=number2[year%10];break;
+ 124   3      
+ 125   3                              case 12:if(flg1==3)
+ 126   3                                              { a++;
+ 127   4                                                if(a<=50)
+ 128   4                                                P3=0x00;
+ 129   4                                               else
+ 130   4                                                P3=0x10;
+ 131   4                                                if(a==100)
+ 132   4                                                a=0;
+ 133   4                                              }
+ 134   3                                                else
+ 135   3                                                P3=0x10;
+ 136   3                                                P0=number1[month/10];break;
+ 137   3      
+ 138   3                              case 13:if(flg1==3)
+ 139   3                                              { b++;
+ 140   4                                                if(b<=50)
+ 141   4                                                P3=0x00;
+ 142   4                                              else 
+ 143   4                                                P3=0x20;
+ 144   4                                               if(b==100)
+ 145   4                                                  b=0;
+ 146   4                                               }
+ 147   3                                               else 
+ 148   3                                               P3=0x20;
+ 149   3                                               P0=number2[month%10];break;
+ 150   3      
+ 151   3                              case 14:if(flg1==2)
+ 152   3                                         { n++;
+ 153   4                                              if(n<=50)
+ 154   4                                              P3=0x00;
+ 155   4                                              else
+ 156   4                                               P3=0x40;
+ 157   4                                              if(n==100)
+ 158   4                                               n=0;
+ 159   4                                         }
+ 160   3                                        else
+ 161   3                                        P3=0x40;
+ 162   3                                        P0=number1[day/10];break;
+ 163   3                                     
+ 164   3                              case 15:if(flg1==2)
+ 165   3                                         {  m++;
+ 166   4                                              if(m<=50) P3=0x00;
+ 167   4                                         else 
+ 168   4                                               P3=0x80;
+ 169   4                                         if(m==100)
+ 170   4                                               m=0;
+ 171   4                                         }
+ 172   3                                              else
+ 173   3                                              P3=0x80;
+ 174   3                                          P0=number1[day%10];break;
+ 175   3                 }
+ 176   2                }
+ 177   1      }
+ 178            void  keyscan()
+ 179           {if(P1_0==0)
+C51 COMPILER V9.00   TEST_3                                                                07/18/2011 19:03:32 PAGE 4   
+
+ 180   1          { delay(50);
+ 181   2                if(P1_0==0)
+ 182   2                  { if(flg==0)
+ 183   3                        { h++;
+ 184   4                         if(h==24)
+ 185   4                          h=0;
+ 186   4                              flg1=5;
+ 187   4                         }
+ 188   3                 else if(flg==1)
+ 189   3                          { year++;
+ 190   4                            flg1=4;
+ 191   4                              }
+ 192   3                      }
+ 193   2              }
+ 194   1        if(P1_1==0)
+ 195   1          { delay(50);
+ 196   2                if(P1_1==0)
+ 197   2                  { if(flg==0)
+ 198   3                         {f++;
+ 199   4                          if(f==60)
+ 200   4                          f=0;
+ 201   4                              flg1=6;
+ 202   4                         }
+ 203   3                         else if(flg==1)
+ 204   3                         { month++;
+ 205   4                           if(month==13)
+ 206   4                            month=1;
+ 207   4                                flg1=3;
+ 208   4                         }
+ 209   3                      }
+ 210   2              }
+ 211   1        if(P1_2==0)
+ 212   1          { delay(50);
+ 213   2                if(P1_2==0)
+ 214   2                  { if(flg==0)
+ 215   3                         { s=0;
+ 216   4                           h=0;
+ 217   4                           f=0;
+ 218   4                         }
+ 219   3                      else
+ 220   3                        {day++;
+ 221   4                         if(day==32)
+ 222   4                         day=0;
+ 223   4                         flg1=2;
+ 224   4                        }
+ 225   3                      }
+ 226   2              }
+ 227   1        if(P1_3==0)
+ 228   1          { delay(50);
+ 229   2                if(P1_3==0)
+ 230   2                  { if(flg1!=0)
+ 231   3                          flg1=0;
+ 232   3                              else
+ 233   3                          flg++;
+ 234   3                        if(flg==2)
+ 235   3                          {flg=0;
+ 236   4                               flg1=0;
+ 237   4                               j=0;
+ 238   4                              }
+ 239   3                        else
+ 240   3                        j=8;
+ 241   3                      }
+C51 COMPILER V9.00   TEST_3                                                                07/18/2011 19:03:32 PAGE 5   
+
+ 242   2              }
+ 243   1       }
+ 244             void update_day( )
+ 245           {     day++;  
+ 246   1              if(month%2!=0)
+ 247   1                {     if(day==32)
+ 248   2                  {day=1;
+ 249   3                       month++;
+ 250   3                  }
+ 251   2                }
+ 252   1              if (month==2)
+ 253   1                {if ((year%4==0&&year%100!=0)||(year%400==0))
+ 254   2                  {if(day==30)
+ 255   3                   {day=1;
+ 256   4                        month++;
+ 257   4                       }
+ 258   3                      }
+ 259   2                      else
+ 260   2                      if(day==29)
+ 261   2                       {day=1;
+ 262   3                        month++;
+ 263   3                       }
+ 264   2                }
+ 265   1              if(month==8)
+ 266   1                {if(day==32)
+ 267   2                  {day=1;
+ 268   3                       month++;
+ 269   3                      }
+ 270   2                }
+ 271   1              if(month==4)
+ 272   1                {if(day==31)
+ 273   2                  {day=1;
+ 274   3                       month++;
+ 275   3                       }
+ 276   2                }
+ 277   1         if(month==6)
+ 278   1                {if(day==31)
+ 279   2                  {day=1;
+ 280   3                       month++;
+ 281   3                      }
+ 282   2                }
+ 283   1              if(month==10)
+ 284   1                {if(day==31)
+ 285   2                  {day=1;
+ 286   3                       month++;
+ 287   3                      }
+ 288   2                }
+ 289   1              if(month==12)
+ 290   1                {if(day==31)
+ 291   2                  {day=1;
+ 292   3                       month++;
+ 293   3                      }
+ 294   2                }
+ 295   1              if(month==13)
+ 296   1              {  month=1;
+ 297   2                 year++;
+ 298   2              } 
+ 299   1        }      
+ 300          
+ 301           void main()
+ 302          {
+ 303   1      TMOD=0x01;
+C51 COMPILER V9.00   TEST_3                                                                07/18/2011 19:03:32 PAGE 6   
+
+ 304   1      TH0=(65536-1000)/256;
+ 305   1      TL0=(65536-1000)%256;
+ 306   1      ET0=1;
+ 307   1      EA=1;
+ 308   1      TR0=1;
+ 309   1      while(1)
+ 310   1        {  
+ 311   2         keyscan();
+ 312   2         }
+ 313   1      }
+ 314          
+ 315          
+ 316           void timer0_int(void) interrupt 1
+ 317          {   unsigned int k;
+ 318   1              TH0=(65536-1000)/256;
+ 319   1              TL0=(65536-1000)%256;
+ 320   1              k++;
+ 321   1              if(k==1000)
+ 322   1               {  k=0;
+ 323   2                  s++;
+ 324   2                  if(s==60)
+ 325   2                  { s=0;
+ 326   3                        f++;
+ 327   3                        if(f==60)
+ 328   3                          {f=0;
+ 329   4                               h++;
+ 330   4                               if(h==24)
+ 331   4                                {  h=0;
+ 332   5                                  update_day(); 
+ 333   5                            }
+ 334   4                         }
+ 335   3                 }
+ 336   2               }
+ 337   1          j++;
+ 338   1         if(flg==0)
+ 339   1                 {if(j==8)
+ 340   2                  j=0;
+ 341   2                 }
+ 342   1         else
+ 343   1                 if(j==16)
+ 344   1                  j=0;
+ 345   1                display();
+ 346   1        }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   1331    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     45       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
